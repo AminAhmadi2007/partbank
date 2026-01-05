@@ -21,13 +21,15 @@
 
         <!-- لوگو آرا سرویس موبایل -->
         <div class="flex items-center">
-          <div class="text-xl font-bold">
-            <span class="text-blue-600">آرا</span>
-            <span class="text-gray-800">سرویس</span>
-          </div>
+          <nuxt-link to="/">
+            <div class="text-xl font-bold">
+              <span class="text-blue-600">آرا</span>
+              <span class="text-gray-800">سرویس</span>
+            </div>
+          </nuxt-link>
         </div>
-
-        <button class="relative p-2">
+        <nuxt-link to="/cart">
+          <button class="relative p-2">
           <svg
             class="w-6 h-6 text-gray-700"
             fill="none"
@@ -46,6 +48,7 @@
             >۳</span
           >
         </button>
+        </nuxt-link>
       </div>
     </div>
 
@@ -74,7 +77,8 @@
         <div
           class="flex items-center justify-between p-4 border-b bg-gradient-to-r from-blue-50 to-gray-50"
         >
-          <div class="flex items-center">
+          <nuxt-link to="/">
+            <div class="flex items-center">
             <div class="text-xl font-bold">
               <span class="text-blue-600">آرا</span>
               <span class="text-gray-800">سرویس</span>
@@ -84,6 +88,7 @@
               >قطعات</span
             >
           </div>
+          </nuxt-link>
           <button @click="toggleMobileSidebar" class="p-2">
             <svg
               class="w-6 h-6 text-gray-500"
@@ -182,12 +187,11 @@
                     </a>
 
                     <div class="pt-2 border-t border-gray-100 mt-2">
-                      <a
-                        href="#"
+                      <nuxt-link to="/category"
                         class="block py-2 px-4 text-xs text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg font-medium"
                       >
                         مشاهده در آرا سرویس →
-                      </a>
+                      </nuxt-link>
                     </div>
                   </div>
                 </div>
@@ -390,17 +394,19 @@
           <div class="flex items-center space-x-8">
             <!-- لوگو آرا سرویس -->
             <div class="flex items-center space-x-3">
-              <div class="flex items-center">
-                <div class="text-3xl font-bold">
-                  <span class="text-blue-600">آرا</span>
-                  <span class="text-gray-900">سرویس</span>
+              <nuxt-link to="/">
+                <div class="flex items-center">
+                  <div class="text-3xl font-bold">
+                    <span class="text-blue-600">آرا</span>
+                    <span class="text-gray-900">سرویس</span>
+                  </div>
+                  <span
+                    class="text-xs bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-1 rounded-full mr-3 font-medium"
+                  >
+                    فروشگاه قطعات
+                  </span>
                 </div>
-                <span
-                  class="text-xs bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-1 rounded-full mr-3 font-medium"
-                >
-                  فروشگاه قطعات
-                </span>
-              </div>
+              </nuxt-link>
             </div>
           </div>
 
@@ -432,7 +438,8 @@
 
           <!-- آیکون‌های کاربر -->
           <div class="flex items-center space-x-6 gap-2">
-            <button class="relative group">
+            <nuxt-link to="/cart">
+              <button class="relative group">
               <div
                 class="flex items-center space-x-2 text-gray-700 hover:text-blue-700 transition-colors"
               >
@@ -460,6 +467,7 @@
                 </div>
               </div>
             </button>
+            </nuxt-link>
 
             <div class="relative">
               <button
@@ -649,7 +657,7 @@
                   class="mt-6 pt-6 border-t p-6 bg-gradient-to-r from-blue-50 to-gray-50"
                 >
                   <div class="flex items-center justify-between">
-                    <a
+                    <nuxt-link to="/category"
                       href="https://araservice.co/categories"
                       target="_blank"
                       class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm"
@@ -668,7 +676,7 @@
                         />
                       </svg>
                       مشاهده همه دسته‌بندی‌ها در آرا سرویس
-                    </a>
+                    </nuxt-link>
                     <div class="text-xs text-gray-500">
                       بیش از ۱۰,۰۰۰ قطعه اورجینال
                     </div>

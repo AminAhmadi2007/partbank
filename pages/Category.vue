@@ -240,7 +240,7 @@
                   <!-- Badges -->
                   <div class="absolute top-3 right-3 flex flex-col gap-2">
                     <span v-if="product.isNew" 
-                          class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm">
+                          class="text-center bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm">
                       جدید
                     </span>
                     <span v-if="product.discount" 
